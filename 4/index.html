@@ -1,0 +1,575 @@
+	<!DOCTYPE html>
+	<html lang="zxx" class="no-js">
+	<head>
+		<!-- Mobile Specific Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Favicon-->
+		<link rel="shortcut icon" href="img/fav.png">
+		<!-- Author Meta -->
+		<meta name="author" content="CodePixar">
+		<!-- Meta Description -->
+		<meta name="description" content="">
+		<!-- Meta Keyword -->
+		<meta name="keywords" content="">
+		<!-- meta character set -->
+		<meta charset="UTF-8">
+		<!-- Site Title -->
+		<title>ENV</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+			<!--
+			CSS
+			============================================= -->
+			<link rel="stylesheet" href="css/linearicons.css">
+			<link rel="stylesheet" href="css/font-awesome.min.css">
+			<link rel="stylesheet" href="css/jquery.DonutWidget.min.css">
+			<link rel="stylesheet" href="css/bootstrap.css">
+			<link rel="stylesheet" href="css/owl.carousel.css">
+			<link rel="stylesheet" href="css/main.css">
+		</head>
+		<body>
+
+			<!-- Start Header Area -->
+			<header class="default-header">
+				<nav class="navbar navbar-expand-lg  navbar-light">
+					<div class="container">
+						  <a class="navbar-brand" href="index.html">
+						  	<img src="img/logo1.jpeg" alt="Logo" width="50" height="50">
+						  </a>
+						  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						    <span class="navbar-toggler-icon"></span>
+						  </button>
+
+						  <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarSupportedContent">
+						    <ul class="navbar-nav">
+								<li><a href="#home">Home</a></li>
+								<li><a href="#blog">News</a></li>
+								<li><a href="#project">Demo</a></li>
+								<li><a href="#service">Service</a></li>
+								<li><a href="#team">Team</a></li>
+							   <!-- Dropdown -->
+							    <li class="dropdown">
+							      <a class="dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+							        Pages
+							      </a>
+							      <div class="dropdown-menu">
+							        <a class="dropdown-item" href="generic.html">Generic</a>
+							        <a class="dropdown-item" href="elements.html">Elements</a>
+							      </div>
+							    </li>									
+						    </ul>
+						  </div>						
+					</div>
+				</nav>
+			</header>
+			<!-- End Header Area -->
+
+			<!-- start banner Area -->
+			<section class="banner-area relative" id="home">
+				<div class="overlay-bg overlay"></div>
+				<div class="container">
+					<div class="row fullscreen d-flex align-items-center justify-content-end">
+						<div class="banner-content col-lg-12 col-md-12">
+							<h1>
+								Restoring <br>
+								<span>Degraded Land</span> for <br> <span>Green Transition </span> Worldwide						
+							</h1>
+							<a href="#" class="primary-btn2 header-btn text-uppercase">Hire Us Now!</a>
+						</div>												
+					</div>
+				</div>
+				<div class="video-background">
+					<video id="background-video" autoplay muted loop>
+						<source src="img/123.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+				</div>
+			</section>
+			
+			<style>
+				.banner-area {
+					position: relative;
+					height: 100vh;
+					overflow: hidden;
+				}
+			
+				.video-background {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					z-index: -1;
+					overflow: hidden;
+				}
+			
+				.video-background video {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					position: absolute;
+					top: 0;
+					left: 0;
+					pointer-events: none;
+				}
+			
+				.overlay-bg {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					background: rgba(0, 0, 0, 0.5); /* Adjust the overlay color and transparency as needed */
+					z-index: 1;
+				}
+			
+				.banner-content {
+					position: relative;
+					z-index: 2;
+				}
+			</style>
+			
+			<script>
+				document.addEventListener('DOMContentLoaded', function () {
+					var video = document.getElementById('background-video');
+					video.addEventListener('loadedmetadata', function () {
+						video.currentTime = 10;
+					});
+			
+					video.addEventListener('timeupdate', function () {
+						if (video.currentTime >= 20) {
+							video.currentTime = 10;
+						}
+					});
+				});
+			</script>
+			
+			<!-- End banner Area -->	
+
+			
+
+			<!-- start case studies Area -->		
+			<section class="blog-area section-gap" id="blog">
+				<div class="container">
+					<div class="row d-flex justify-content-center">
+						<div class="menu-content pb-70 col-lg-8">
+							<div class="title text-center">
+								<h1 class="mb-10">Lates News from All Catogeries</h1>
+								<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam excepturi reiciendis eius sunt? Ab doloremque ullam similique incid</p>
+							</div>
+						</div>
+					</div>					
+					<div class="row">
+						<div class="col-lg-3 col-md-6 single-blog">
+							<img class="img-fluid" src="img/news1.png" alt="">
+							<p class="date">28.03.2024							</p>
+							<h4><a href="#">News #1
+							</a></h4>
+							<p>
+Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, unde accusamus. Quam a reiciendis est illo magni iste eveniet delectus assumenda animi. Iure, autem. Culpa necessitatibus dolor tenetur possimus praesentium!		</p>
+<a href="#" class="text-uppercase primary-btn2 primary-border circle">View Details</a>
+								
+						</div>
+						<div class="col-lg-3 col-md-6 single-blog">
+							<img class="img-fluid" src="img/news2.jpeg" alt="">
+							<p class="date">01.03.2024
+							</p>
+								<h4><a href="#">News #2
+								</a></h4>
+							<p>
+								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero necessitatibus, dolorum facere velit molestiae ullam esse harum temporibus at soluta saepe animi repellat enim aliquid? Id distinctio quo est omnis!
+							</p>
+							<a href="#" class="text-uppercase primary-btn2 primary-border circle">View Details</a>
+							
+						</div>
+						<div class="col-lg-3 col-md-6 single-blog">
+							<img class="img-fluid" src="img/news3.png" alt="">
+							<p class="date">24.12.2023
+							</p>
+							<h4><a href="#">News #3
+							</a></h4>
+							<p>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem deleniti harum dolore molestiae suscipit molestias ut dicta animi? Ipsum, consectetur aut! Iste, adipisci quia ut dolore totam repellat! Quas, deserunt.							</p>
+<a href="#" class="text-uppercase primary-btn2 primary-border circle">View Details</a>
+							
+						</div>
+						<div class="col-lg-3 col-md-6 single-blog">
+							<img class="img-fluid" src="img/news4.png" alt="">
+							<p class="date">10.11.2023</p>
+							<h4><a href="#">News #4
+							</a></h4>
+							<p>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi reiciendis cumque eligendi inventore, cum doloremque laudantium voluptatum labore itaque quas minus rerum aperiam, sit qui alias excepturi debitis omnis aut.<a href="#" class="text-uppercase primary-btn2 primary-border circle">View Details</a>
+								
+						</div>						
+					</div>
+				</div>	
+			</section>
+			<!-- end blog Area -->
+
+
+
+			<!-- Start project Area -->
+			<section class="project-area section-gap" id="project">
+				<div class="container">
+					<div class="row d-flex justify-content-center">
+						<div class="menu-content pb-40 col-lg-8">
+							<div class="title text-center">
+								<h1 class="mb-10">Demo Soil Plant</h1>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> labore  et dolore magna aliqua.</p>
+							</div>
+						</div>
+					</div>						
+					<div class="row">
+						<div class="active-works-carousel mt-40">
+							<div class="item">
+								<img class="img-fluid" src="img/demo1.png" alt="">
+								<div class="caption text-center mt-20">
+									<h6 class="text-uppercase">Vector Illustration</h6>
+									<p>LCD screens are uniquely modern in style, and the liquid crystals that make them work have <br> allowed humanity to create slimmer, more portable technology.</p>
+								</div>
+							</div>
+							<div class="item">
+								<img class="img-fluid" src="img/demo2.jpeg" alt="">
+								<div class="caption text-center mt-20">
+									<h6 class="text-uppercase">Vector Illustration</h6>
+									<p>LCD screens are uniquely modern in style, and the liquid crystals that make them work have <br> allowed humanity to create slimmer, more portable technology.</p>
+								</div>
+							</div>
+							<div class="item">
+								<img class="img-fluid" src="img/demo4.jpeg" alt="">
+								<div class="caption text-center mt-20">
+									<h6 class="text-uppercase">Vector Illustration</h6>
+									<p>LCD screens are uniquely modern in style, and the liquid crystals that make them work have <br> allowed humanity to create slimmer, more portable technology.</p>
+								</div>
+							</div>
+							<div class="item">
+								<img class="img-fluid" src="img/demo5.jpeg" alt="">
+								<div class="caption text-center mt-20">
+									<h6 class="text-uppercase">Vector Illustration</h6>
+									<p>LCD screens are uniquely modern in style, and the liquid crystals that make them work have <br> allowed humanity to create slimmer, more portable technology.</p>
+								</div>
+							</div>
+							<div class="item">
+								<img class="img-fluid" src="img/demo6.jpeg" alt="">
+								<div class="caption text-center mt-20">
+									<h6 class="text-uppercase">Vector Illustration</h6>
+									<p>LCD screens are uniquely modern in style, and the liquid crystals that make them work have <br> allowed humanity to create slimmer, more portable technology.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</section>
+			<!-- End project Area -->
+			
+		
+			<!-- Start skill Area -->
+			<section class="skill-area section-gap">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6 skill-left">
+							<h1 class="text-white mb-30">Our Fields of Expertness</h1>
+							<p>
+Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et ut sed a. Nulla amet obcaecati similique tempore, dolores aliquam expedita deserunt minus unde quia earum sequi accusamus asperiores suscipit iste!							</p>
+						</div>
+						<div class="col-lg-6 skill-right">
+							<div class="row d-flex justify-content-center">
+								<div class="col-lg-4 col-md-4 single-skill">
+									<div class="skill1 d-block mx-auto"></div>
+									<h4>Research and Development</h4>
+								</div>
+								<div class="col-lg-4 col-md-4 single-skill">
+									<div class="skill2 d-block mx-auto"></div>
+									<h4>Environmental Technology and Engineering</h4>
+								</div>
+								<div class="col-lg-4 col-md-4 single-skill">
+									<div class="skill3 d-block mx-auto"></div>
+									<h4> Soil Washing Technology</h4>
+								</div>																
+							</div>
+						</div>
+					</div>
+				</div>	
+			</section>
+			<!-- End skill Area -->
+			
+			
+			<!-- Start team Area -->
+			<section class="team-area section-gap" id="team">
+				<div class="container">
+					<div class="row d-flex justify-content-center">
+						<div class="menu-content pb-70 col-lg-8">
+							<div class="title text-center">
+								<h1 class="mb-10">About Creative Agency Team</h1>
+								<p>The core team of six, five of whom have PhDs, has experience in marketing, science and engineering
+
+								</p>
+							</div>
+						</div>
+					</div>						
+					<div class="row justify-content-center d-flex align-items-center">
+						<div class="col-md-3 single-team">
+						    <div class="thumb">
+						        <img class="img-fluid" src="img/about1.jpeg" alt="">
+						        <div class="align-items-center justify-content-center d-flex">
+									<a href="#"><i class="fa fa-facebook"></i></a>
+									<a href="#"><i class="fa fa-twitter"></i></a>
+									<a href="#"><i class="fa fa-linkedin"></i></a>
+						        </div>
+						    </div>
+						    <div class="meta-text mt-30 text-center">
+							    <h4>Domen Leštan</h4>
+							    <p>CEO & CTO</p>									    	
+						    </div>
+						</div>
+						<div class="col-md-3 single-team">
+						    <div class="thumb">
+						        <img class="img-fluid" src="img/about2.jpeg" alt="">
+						        <div class="align-items-center justify-content-center d-flex">
+									<a href="#"><i class="fa fa-facebook"></i></a>
+									<a href="#"><i class="fa fa-twitter"></i></a>
+									<a href="#"><i class="fa fa-linkedin"></i></a>
+						        </div>
+						    </div>
+						    <div class="meta-text mt-30 text-center">
+							    <h4>Neža Finžgar</h4>
+							    <p>CAO</p>			    	
+						    </div>
+						</div>	
+						<div class="col-md-3 single-team">
+						    <div class="thumb">
+						        <img class="img-fluid" src="img/about3.png" alt="">
+						        <div class="align-items-center justify-content-center d-flex">
+									<a href="#"><i class="fa fa-facebook"></i></a>
+									<a href="#"><i class="fa fa-twitter"></i></a>
+									<a href="#"><i class="fa fa-linkedin"></i></a>
+						        </div>
+						    </div>
+						    <div class="meta-text mt-30 text-center">
+							    <h4>Dragan Martinovič</h4>
+							    <p>COO</p>			    	
+						    </div>
+						</div>	
+						<div class="col-md-3 single-team">
+						    <div class="thumb">
+						        <img class="img-fluid" src="img/about4.png" alt="">
+						        <div class="align-items-center justify-content-center d-flex">
+									<a href="#"><i class="fa fa-facebook"></i></a>
+									<a href="#"><i class="fa fa-twitter"></i></a>
+									<a href="#"><i class="fa fa-linkedin"></i></a>
+						        </div>
+						    </div>
+						    <div class="meta-text mt-30 text-center">
+							    <h4>Grega E. Voglar
+								</h4>
+							    <p>Bussines Developer and International Project Coordinator</p>			    	
+						    </div>
+						</div>																									
+				
+					</div>
+				</div>	
+			</section>
+			<!-- End team Area -->
+
+
+			<!-- Start testimonial Area -->
+			<section class="testimonial-area relative section-gap">
+				<div class="overlay overlay-bg"></div>
+				<div class="container">
+					<div class="row">
+						<div class="active-testimonial">
+							<div class="single-testimonial item d-flex flex-row">
+								<div class="thumb">
+									<img class="img-fluid" src="img/user1.png" alt="">
+								</div>
+								<div class="desc">
+									<h4 mt-30>Is ReSoil® technology limited to removal of Pb from contaminated soils?
+									</h4>
+									<p>
+										Response: EDTA which is used as a chelating agent in ReSoil® technology removes Cd, Zn, Cu and other toxic metals non-specifically from contaminated soils. Pb is the most ubiquitous of these metals and presents the most pervasive and persistent risk to human health.
+
+									</p>
+									
+								</div>
+							</div>
+							<div class="single-testimonial item d-flex flex-row">
+								<div class="thumb">
+									<img class="img-fluid" src="img/user2.png" alt="">
+								</div>
+								<div class="desc">
+									<h4 mt-30>Is ReSoil® technology limited to removal of Pb from contaminated soils?
+									</h4>
+									<p>
+										Response: EDTA which is used as a chelating agent in ReSoil® technology removes Cd, Zn, Cu and other toxic metals non-specifically from contaminated soils. Pb is the most ubiquitous of these metals and presents the most pervasive and persistent risk to human health.
+
+									</p>
+									
+								</div>
+							</div>								
+						</div>					
+					</div>
+				</div>	
+			</section>
+			<!-- End testimonial Area -->
+			
+
+			<!-- start case studies Area -->		
+			<section class="blog-area section-gap" id="blog">
+				<div class="container">
+					<div class="row d-flex justify-content-center">
+						<div class="menu-content pb-70 col-lg-8">
+							<div class="title text-center">
+								<h1 class="mb-10">Case Studies</h1>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  et dolore magna aliqua.</p>
+							</div>
+						</div>
+					</div>					
+					<div class="row">
+						<div class="col-lg-3 col-md-6 single-blog">
+							<img class="img-fluid" src="img/blog1.jpeg" alt="">
+							<p class="date">Nov 2017							</p>
+							<h4><a href="#">Remediation case #1
+							</a></h4>
+							<p>
+								Construction of vegetable garden with raised beds with remediated soil from City of Prevalje, Meza Valley, Slovenia
+							</p>
+							<div class="meta-bottom d-flex justify-content-between">
+								<p><span class="lnr lnr-heart"></span> 15 Likes</p>
+								<p><span class="lnr lnr-bubble"></span> 02 Comments</p>
+							</div>									
+						</div>
+						<div class="col-lg-3 col-md-6 single-blog">
+							<img class="img-fluid" src="img/blog2.jpeg" alt="">
+							<p class="date">August 2018</p>
+								<h4><a href="#">Remediation case #2
+								</a></h4>
+							<p>
+								Construction of vegetable garden with raised
+beds with remediated soil from city of Arnoldstein, Lorem
+
+Austria
+							</p>
+							<div class="meta-bottom d-flex justify-content-between">
+								<p><span class="lnr lnr-heart"></span> 15 Likes</p>
+								<p><span class="lnr lnr-bubble"></span> 02 Comments</p>
+							</div>									
+						</div>
+						<div class="col-lg-3 col-md-6 single-blog">
+							<img class="img-fluid" src="img/blog3.png" alt="">
+							<p class="date">Oct 2021</p>
+							<h4><a href="#">Remediation case #3
+							</a></h4>
+							<p>
+								Z1-3196 Postdoc project: Remediation of soil contaminated with toxic metals, metalloids and organic pollutants
+							</p>
+							<div class="meta-bottom d-flex justify-content-between">
+								<p><span class="lnr lnr-heart"></span> 15 Likes</p>
+								<p><span class="lnr lnr-bubble"></span> 02 Comments</p>
+							</div>									
+						</div>
+						<div class="col-lg-3 col-md-6 single-blog">
+							<img class="img-fluid" src="img/blog4.jpeg" alt="">
+							<p class="date">Jan 2022</p>
+							<h4><a href="#">Remediation case #4
+							</a></h4>
+							<p>
+								Finished after Phase 2
+
+
+								Z1-3196 Postdoc project: Remediation of soil contaminated with toxic metals, metalloids and organic pollutants
+							</p>
+							<div class="meta-bottom d-flex justify-content-between">
+								<p><span class="lnr lnr-heart"></span> 15 Likes</p>
+								<p><span class="lnr lnr-bubble"></span> 02 Comments</p>
+							</div>									
+						</div>						
+					</div>
+				</div>	
+			</section>
+			<!-- end blog Area -->		
+
+			
+			<!-- start footer Area -->		
+			<footer class="footer-area section-gap">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3  col-md-12">
+							<div class="single-footer-widget">
+								<h6>Top Products</h6>
+								<ul class="footer-nav">
+									<li><a href="#">Managed Website</a></li>
+									<li><a href="#">Manage Reputation</a></li>
+									<li><a href="#">Power Tools</a></li>
+									<li><a href="#">Marketing Service</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-6  col-md-12">
+							<div class="single-footer-widget newsletter">
+								<h6>Newsletter</h6>
+								<p>You can trust us. we only send promo offers, not a single spam.</p>
+								<div id="mc_embed_signup">
+									<form target="_blank" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="form-inline">
+
+										<div class="form-group row" style="width: 100%">
+											<div class="col-lg-8 col-md-12">
+												<input name="EMAIL" placeholder="Enter Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email '" required="" type="email">
+												<div style="position: absolute; left: -5000px;">
+													<input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
+												</div>
+											</div> 
+										
+											<div class="col-lg-4 col-md-12">
+												<button class="nw-btn primary-btn">Subscribe<span class="lnr lnr-arrow-right"></span></button>
+											</div> 
+										</div>		
+										<div class="info"></div>
+									</form>
+								</div>		
+							</div>
+						</div>
+						<div class="col-lg-3  col-md-12">
+							<div class="single-footer-widget mail-chimp">
+								<h6 class="mb-20">Instragram Feed</h6>
+								<ul class="instafeed d-flex flex-wrap">
+									<li><img src="img/i1.jpg" alt=""></li>
+									<li><img src="img/i2.jpg" alt=""></li>
+									<li><img src="img/i3.jpg" alt=""></li>
+									<li><img src="img/i4.jpg" alt=""></li>
+									<li><img src="img/i5.jpg" alt=""></li>
+									<li><img src="img/i6.jpg" alt=""></li>
+									<li><img src="img/i7.jpg" alt=""></li>
+									<li><img src="img/i8.jpg" alt=""></li>
+								</ul>
+							</div>
+						</div>						
+					</div>
+
+					<div class="row footer-bottom d-flex justify-content-between">
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            <p class="col-lg-8 col-sm-12 footer-text m-0 text-white">Copyright &copy; All rights reserved </p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						<div class="col-lg-4 col-sm-12 footer-social">
+							<a href="#"><i class="fa fa-facebook"></i></a>
+							<a href="#"><i class="fa fa-twitter"></i></a>
+							<a href="#"><i class="fa fa-dribbble"></i></a>
+							<a href="#"><i class="fa fa-behance"></i></a>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- End footer Area -->		
+
+			<script src="js/vendor/jquery-2.2.4.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+			<script src="js/vendor/bootstrap.min.js"></script>
+			<script src="js/jquery.ajaxchimp.min.js"></script>
+			<script src="js/parallax.min.js"></script>			
+			<script src="js/owl.carousel.min.js"></script>			
+			<script src="js/jquery.sticky.js"></script>
+			<script src="js/jquery.DonutWidget.min.js"></script>
+			<script src="js/jquery.magnific-popup.min.js"></script>			
+			<script src="js/main.js"></script>	
+		</body>
+	</html>
