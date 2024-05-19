@@ -185,13 +185,13 @@
     position: absolute;
     top: 50%;
     left: 0;
-    background: var(--bs-primary);
+    background: rgb(107, 183, 125);
     border-radius: 0 50px 50px 0;
     opacity: 1;
 }
 
 .carousel-control-prev:hover {
-    background: var(--bs-secondary);
+    background: #218b97;
     transition: .8s;
 }
 
@@ -201,18 +201,18 @@
     position: absolute;
     top: 50%;
     right: 0;
-    background: var(--bs-primary);
+    background: rgb(107, 183, 125);
     border-radius: 50px 0 0 50px;
     opacity: 1;
 }
 
 .carousel-control-next:hover {
-    background: var(--bs-secondary);
+    background: #218b97;
     transition: .8s;
 }
 
 .carousel-caption .carousel-content a button.carousel-content-btn1 {
-    background: var(--bs-secondary);
+    background: rgb(107, 183, 125);
     color: var(--bs-dark);
     opacity: 1;
     border: 0;
@@ -220,8 +220,8 @@
 }
 
 .carousel-caption .carousel-content a button.carousel-content-btn1:hover {
-    background: var(--bs-primary);
-    color: #ffffff;
+    background: #218b97;
+    color: var(--bs-white);
     border: 0;
     opacity: 1;
     transition: 1s;
@@ -229,16 +229,16 @@
 }
 
 .carousel-caption .carousel-content a button.carousel-content-btn2 {
-    background: var(--bs-primary);
-    color: var(--bs-white);
+    background:  rgb(107, 183, 125);
+    color: var(--bs-dark);
     opacity: 1;
     border: 0;
     border-radius: 20px;
 }
 
 .carousel-caption .carousel-content a button.carousel-content-btn2:hover {
-    background: var(--bs-secondary);
-    color: var(--bs-dark);
+    background: #218b97;
+    color: var(--bs-white);
     border: 0;
     opacity: 1;
     transition: 1s;
@@ -248,15 +248,20 @@
 #carouselId .carousel-indicators li {
     width: 30px;
     height: 10px;
-    background: var(--bs-primary);
+    background:  rgb(107, 183, 125);
     margin: 10px;
     border-radius: 30px;
     opacity: 1;
 }
 
 #carouselId .carousel-indicators li:hover {
-    background: var(--bs-secondary);
+    background: #218b97;
     opacity: 1;
+}
+
+
+.face{
+    background-color: #0c545c;
 }
 
 @media (max-width: 992px) {
